@@ -10,22 +10,23 @@
   <body class="bg-body">
 
     <header>
-      <!-- Logo a sinistra, link nav a destra. Usa container + d-flex + justify-content-between -->
-       <nav class="bg-primary text-light">
-        <ul class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-6 d-flex list-unstyled justify-content-center">
-              <li><h1>Titolo</h1></li>
-            </div>  
-            <div class="col-md-6 d-flex list-unstyled justify-content-center   gap-3">
-              <li >Titolo</li>
-              <li>Titolo</li>
-              <li>Titolo</li>
-            </div>  
-          </div>
-        </ul>
-       </nav>
-    </header>
+  <!-- Usa container + d-flex + justify-content-between -->
+  <nav class="bg-primary text-light py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      
+      <!-- Titolo a sinistra -->
+      <h1 class="h3 m-0">EpiShop</h1>
+
+      <!-- Voci a destra: 2 su mobile, 3 da md (tablet/desktop) in su -->
+      <ul class="d-flex list-unstyled gap-3 gap-md-4 m-0 align-items-center">
+        <li>Prodotti</li>
+        <li>Offerte</li>
+        <li class="d-none d-md-inline">Contatti</li>
+      </ul>
+
+    </div>
+  </nav>
+</header>
 
     <section class="bg-body-secondary">
       <!-- Hero: titolo grande, sottotitolo, bottone CTA. Usa container + text-center + classi utility -->
@@ -33,7 +34,7 @@
           <div class="d-flex flex-column align-items-center justify-content-center text-center">
             <h2 class="fw-bold">Saldi di primavera</h2>
             <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus molestiae veritatis, accusantium nihil quis blanditiis quia reiciendis architecto tempore est ex aliquid nam sequi, odit mollitia iure animi beatae fugit.</p>
-            <button class="btn btn-primary">Vedi i prodoti</button>
+            <button class="btn btn-primary">Vedi i Prodotti</button>
           </div>
        </div>
     </section>
@@ -54,28 +55,28 @@
            </div>
         </aside>
 
-        <section class="col-12 col-md-6 col-8">
-          <h2>prodotti in evidenza</h2>
-          <div class="row"> 
+        <section class="col-12 col-xl-8">
+          <h2>Prodotti in evidenza</h2>
+          <div class="row "> 
               <div class="col-12 col-md-6 col-xl-4  rounded-3 shadow p-3">
                     <div class="w-100 rounded-5">
                         <img class="img-fluid rounded-3" src="https://cdn.pixabay.com/photo/2026/02/24/16/10/ray_shrewsberry-rose-10141748_1280.png" alt="">
                     </div>
-                    <h4>Articolo</h4>
+                    <h4 class="fw-bold">Articolo</h4>
                     <p>$89.99</p>
               </div>
                <div class="col-12 col-md-6 col-xl-4  rounded-3 shadow p-3">
                     <div class="w-100 rounded-5">
                         <img class="img-fluid rounded-3" src="https://cdn.pixabay.com/photo/2026/02/24/16/10/ray_shrewsberry-rose-10141748_1280.png" alt="">
                     </div>
-                    <h4>Articolo</h4>
+                    <h4 class="fw-bold">Articolo</h4>
                     <p>$89.99</p>
               </div>
                <div class="col-12 col-md-6 col-xl-4  rounded-3 shadow p-3">
                     <div class="w-100 rounded-5">
                         <img class="img-fluid rounded-3" src="https://cdn.pixabay.com/photo/2026/02/24/16/10/ray_shrewsberry-rose-10141748_1280.png" alt="">
                     </div>
-                    <h4>Articolo</h4>
+                    <h4 class="fw-bold">Articolo</h4>
                     <p>$89.99</p>
               </div>
           </div>
@@ -86,8 +87,11 @@
       </div>
     </main>
 
-    <footer>
+    <footer class="bg-black">
       <!-- Footer scuro centrato con copyright -->
+       <h2 class="text-white text-center p-3">
+          &copy 2026 EpiShop - tutti i diriti riservati
+       </h2>
     </footer>
 
   </body>
